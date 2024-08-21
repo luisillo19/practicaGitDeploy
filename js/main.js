@@ -9,8 +9,28 @@
             emoji.innerHTML = emojis[random];
     };
 
+
+
     setInterval(()=>{
 
         randomEmoji();
 
     }, 1000);
+
+
+    const sendMessage = document.querySelector('#sendMessage');
+    const btns = document.querySelector('#buttons');
+    const btnSend = document.getElementById('btnSend');
+
+    document.querySelector(".main__form").addEventListener('submit', (event)=> {
+        event.preventDefault();
+    });
+        
+   
+
+    btnSend.addEventListener('click', () =>{
+        
+        sendMessage.style.display = 'block';
+        btns.style.display = 'none';
+
+    });

@@ -46,10 +46,7 @@ body{
   color: white;
   font-size: 2rem;
   font-size: clamp(2rem, -2rem + 25vw, 18rem);
-  margin-bottom: 5rem;
   text-align: center;
-
-
 }
 
 .layout__emojis{
@@ -77,3 +74,72 @@ body{
   cursor: pointer;
 }
 
+.form__container{
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 3.125rem;
+}
+
+.form__input{
+  width: 25rem;
+  text-align: center;
+  border-radius: .5rem;
+  padding: .625rem;
+}
+
+.form__label{
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.main__form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form__btn{
+  margin-top: 1.25rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding: .625rem 2.5rem;
+  border: 2px solid white;
+  border-radius: 2.5rem;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.form__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.form__btn:hover{
+  color: #2f4358;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.send{
+  background-color: white;
+  color: #2f4358;
+  box-shadow: 4px 4px 6px #2f4358;
+}
+
+.send:hover{
+  color: white;
+  background-color: #2f4358;
+}
+
+.envio__message{
+  margin-top: 1.25rem;
+  color: white;
+  font-size: 4rem;
+  display: none;
+}
