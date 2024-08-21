@@ -36,6 +36,20 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+}
+
+
+
+.title{
+  color: white;
+  font-size: 2rem;
+  font-size: clamp(2rem, -2rem + 25vw, 18rem);
+  margin-bottom: 5rem;
+  text-align: center;
+
+
 }
 
 .layout__emojis{
@@ -53,7 +67,6 @@ body{
 
 .emojis__emoji{
   font-size: 20rem;
-  filter: grayscale(1);
   transition: all ease-in-out 0.3s;
 }
 
@@ -63,3 +76,4 @@ body{
   filter: grayscale(0);
   cursor: pointer;
 }
+
